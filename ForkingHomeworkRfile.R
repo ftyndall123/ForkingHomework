@@ -11,4 +11,5 @@ diamonds%>%
   arrange(desc(carat))%>%
   slice(1:20)
 
+
 diamonds[., list(carat, cut, price)][cut =="Premium"][rice > 7000 & price < 10000][order(-carat)][1:20]
